@@ -1,0 +1,230 @@
+#works {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.worksTitle {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.worksDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 45rem;
+  margin-bottom: 20px;
+}
+
+.worksImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 65rem;
+}
+.worksImg {
+  object-fit: cover;
+  height: 25rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.expCont {
+  background: rgb(50, 50, 50);
+  color: white;
+  display: flex;
+  border-radius: 20px;
+  max-width: 1200px;
+  padding: 3rem;
+  gap: 5px;
+}
+.expContLeft {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  max-height: auto;
+  margin-right: 10px;
+}
+.expContRight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+.expContRightDetail {
+  display: flex;
+  flex-direction: column;
+}
+.expContRightDetail p {
+  font-size: 16px;
+  margin: 10px 0 5px 0;
+}
+.expContRightDetail span {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.expContLeft p {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  text-align: justify;
+  font-size: 14px;
+  margin-right: 10%;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  align-items: center;
+  flex-basis: 45%;
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+#tecrube-veriler {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tecrube-bar {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-right: 10%;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 10px;
+  position: relative;
+}
+
+.progress1 {
+  background-color: rgb(2, 175, 2);
+  height: 100%;
+  border-radius: 5px;
+  text-align: right;
+  color: white;
+  padding-right: 5px;
+  font-size: 12px;
+  line-height: 10px;
+  width: 95%;
+}
+.progress2 {
+  background-color: green;
+  height: 100%;
+  border-radius: 5px;
+  text-align: right;
+  color: white;
+  padding-right: 5px;
+  font-size: 12px;
+  line-height: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #works {
+    padding: 0 0.5rem;
+  }
+
+  .worksImgs {
+    flex-direction: column;
+  }
+
+  .worksImg {
+    width: 65%;
+    height: auto;
+    margin: 0.5rem 0;
+  }
+
+  .expCont {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .expContLeft,
+  .expContRight {
+    margin-right: 0;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .expContLeft p {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .expContRightDetail p,
+  .expContRightDetail span {
+    text-align: center;
+  }
+
+  .tecrube-bar {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .expCont {
+    padding: 2rem 0.5rem;
+  }
+
+  .expContLeft p {
+    font-size: 12px;
+  }
+
+  .worksTitle {
+    font-size: 2.5rem;
+  }
+
+  .expContRightDetail p {
+    font-size: 14px;
+  }
+
+  .expContRightDetail span {
+    font-size: 20px;
+  }
+
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progress1,
+  .progress2 {
+    font-size: 10px;
+    line-height: 8px;
+  }
+}
