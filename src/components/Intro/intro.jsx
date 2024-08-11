@@ -18,7 +18,7 @@ const Intro = () => {
           yüksek
           <br /> başarıyı elde etmelerine rehberlik ediyorum.
         </p>
-        <Link>
+        {/* <Link>
           <a
             href="https://api.whatsapp.com/send?phone=905533245772&text=Merhaba,%20Web%20sitenizden%20ulaşıyorum;%20"
             target="_blank"
@@ -28,7 +28,7 @@ const Intro = () => {
               İletişime Geç
             </button>
           </a>
-        </Link>
+        </Link> */}
       </div>
       <img src={bg} alt="" className="bg" />
     </section>

@@ -1,14 +1,15 @@
 import "./contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import FacebookIcon from "../../assets/facebook-icon.png";
 import InstagramIcon from "../../assets/instagram.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YoutubeIcon from "../../assets/youtube.png";
+import TiktokIcon from "../../assets/tiktok.png";
 import kadin1 from "../../assets/kadın1.webp";
 import kadin2 from "../../assets/kadın2.webp";
 import kadin4 from "../../assets/kadin4.webp";
 import kadin5 from "../../assets/kadin5.webp";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -22,11 +23,12 @@ const Contact = () => {
       })
       .then(
         () => {
+          console.log("yes");
           e.target.reset();
-          alert("Mesajınız başarıyla gönderildi!");
+          toast.success("Mesajınız başarıyla gönderildi!");
         },
         (error) => {
-          alert("Bir sorun oluştu", error.text);
+          toast.error("Bir sorun oluştu", error.text);
         }
       );
   };
@@ -94,33 +96,48 @@ const Contact = () => {
             className="name"
             placeholder="İsim Soyisim"
             name="your_name"
+            required
           />
           <input
             type="email"
             className="email"
             placeholder="Mail Adresi"
             name="your_email"
+            required
           />
           <input
             type="number"
             className="phone"
-            placeholder="Telefon Numarası"
+            placeholder="Telefon Numarası "
             name="your_phone"
+            required
           />
           <textarea
             name="message"
             rows="5"
             className="msg"
             placeholder="Mesajınız"
+            required
           ></textarea>
           <button type="submit" value="Send" className="submitBtn">
             Gönder
           </button>
           <div className="links">
-            <img src={InstagramIcon} alt="Instagram" className="link" />
-            <img src={FacebookIcon} alt="Facebook" className="link" />
-            <img src={TwitterIcon} alt="Twitter" className="link" />
-            <img src={YoutubeIcon} alt="Youtube" className="link" />
+            <a href="https://www.instagram.com//" target="_blank">
+              <img src={InstagramIcon} alt="Instagram" className="link" />
+            </a>
+            <a href="https://www.youtube.com/@SergenHoca" target="_blank">
+              <img src={YoutubeIcon} alt="Youtube" className="link" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@sergenhocamatematik"
+              target="_blank"
+            >
+              <img src={TiktokIcon} alt="Tiktok" className="link" />
+            </a>
+            <a href="https://x.com/HocaSergen36455" target="_blank">
+              <img src={TwitterIcon} alt="Twitter" className="link" />
+            </a>
           </div>
         </form>
       </div>

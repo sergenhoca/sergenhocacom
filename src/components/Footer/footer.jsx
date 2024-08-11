@@ -2,7 +2,8 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      SergenHoca <a href="/">Anasayfa</a> &#169; 2024 | Tüm Hakları Saklıdır.
+      SergenHoca &nbsp; <a href="/"> Anasayfa</a> &#169; 2024 | Tüm Hakları
+      Saklıdır.
     </footer>
   );
 };
