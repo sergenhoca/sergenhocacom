@@ -13,7 +13,7 @@
   z-index: -1;
   object-fit: cover;
   height: 100vh;
-  border-radius: 25rem;
+  border-radius: 5rem;
 }
 .introContent {
   height: 100vh;

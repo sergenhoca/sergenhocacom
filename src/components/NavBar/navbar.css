@@ -84,4 +84,8 @@
   .desktopMenuBtn {
     display: none;
   }
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
 }
