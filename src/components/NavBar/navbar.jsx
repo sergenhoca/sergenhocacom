@@ -121,7 +121,7 @@ const Navbar = () => {
           className="ListItem"
           onClick={() => setShowMenu(false)}
         >
-          Başarılar
+          Yorumlar
         </Link>
         <Link
           activeClass="active"
@@ -133,7 +133,7 @@ const Navbar = () => {
           className="ListItem"
           onClick={() => setShowMenu(false)}
         >
-          Contact
+          Bana Ulaş
         </Link>
       </div>
     </nav>
