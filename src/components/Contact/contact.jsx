@@ -43,7 +43,7 @@ const Contact = () => {
       <div id="yorumlar-container">
         <div id="card-1" className="yorum-card">
           <img src={kadin1} alt="User Avatar" />
-          <h3>Öykü ATEŞ</h3>
+          <h3>Öykü A***</h3>
           <p>★★★★★</p>
           <p className="card-desc">
             "Matematikteki ilgi eksikliğimi <b>Sergen Dinçer</b>'in matematik
@@ -53,7 +53,7 @@ const Contact = () => {
         </div>
         <div id="card-2" className="yorum-card">
           <img src={kadin2} alt="User Avatar" />
-          <h3>Koray ORHAN</h3>
+          <h3>Koray C***</h3>
           <p>★★★★★</p>
           <p className="card-desc">
             <b>"Sergen Hoca</b>, matematikte özgüveni artırıyor. Çocuğum,
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
         <div id="card-3" className="yorum-card">
           <img src={kadin5} alt="User Avatar" />
-          <h3>Tülay SÖNMEZ</h3>
+          <h3>Tülay S***</h3>
           <p>★★★★★</p>
           <p className="card-desc">
             "Matematikteki ilerlemeyi özel dersler ile yakından takip eden
@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
         <div id="card-4" className="yorum-card">
           <img src={kadin4} alt="User Avatar" />
-          <h3>Levent KAYA</h3>
+          <h3>Levent K***</h3>
           <p>★★★★★</p>
           <p className="card-desc">
             "Kızımın matematikteki gelişimini <b>Sergen Dinçer</b>'e borçluyuz.
