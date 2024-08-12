@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
         <div id="card-3" className="yorum-card">
           <img src={kadin5} alt="User Avatar" />
-          <h3>Tülay S***</h3>
+          <h3>Aylin S***</h3>
           <p>★★★★★</p>
           <p className="card-desc">
             "Matematikteki ilerlemeyi özel dersler ile yakından takip eden
