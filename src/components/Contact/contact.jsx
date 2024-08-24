@@ -123,7 +123,7 @@ const Contact = () => {
             Gönder
           </button>
           <div className="links">
-            <a href="https://www.instagram.com//" target="_blank">
+            <a href="https://www.instagram.com/dincersrgn" target="_blank">
               <img src={InstagramIcon} alt="Instagram" className="link" />
             </a>
             <a href="https://www.youtube.com/@SergenHoca" target="_blank">
